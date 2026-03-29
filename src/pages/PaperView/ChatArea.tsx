@@ -86,7 +86,7 @@ export default function ChatArea({ sections, projectTitle, folderName, presets }
   const buildContext = (sectionTitles: string[]) => {
     const selected = sections.filter(s => sectionTitles.includes(s.title))
     const parts: string[] = []
-    if (projectTitle) parts.push(`論文タイトル: ${projectTitle}`)
+    if (projectTitle) parts.push(`Paper Title: ${projectTitle}`)
     for (const s of selected) {
       parts.push(`## ${s.title}\n\n${s.content}`)
     }
